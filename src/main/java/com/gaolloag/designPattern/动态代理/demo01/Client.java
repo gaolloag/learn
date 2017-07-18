@@ -4,7 +4,6 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 
 /**
- * Created by jack.yang on 2017/7/10.
  */
 public class Client {
     public static void main(String[] args)
