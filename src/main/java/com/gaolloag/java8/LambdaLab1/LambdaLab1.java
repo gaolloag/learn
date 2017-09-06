@@ -1,4 +1,4 @@
-package com.gaolloag.java8;
+package com.gaolloag.java8.LambdaLab1;
 
 import java.util.Arrays;
 
@@ -13,7 +13,7 @@ public class LambdaLab1 {
 			System.out.println(e);
 		});
 
-		Arrays.asList("a","b","c").sort( (e1,e2) -> e1.compareTo(e2));;
+		Arrays.asList("a","b","c").sort( (e1,e2) -> e1.compareTo(e2));
 
 	}
 }
