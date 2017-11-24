@@ -15,6 +15,15 @@ rule "Good Bye"
     dialect "java"
     when
        Message( status == Message.GOODBYE, message : message )
+
     then
         System.out.println( message );
+end
+
+rule "gaolloag"
+    dialect "java"
+    when
+       Message( status == Message.GOODBYE, message : message )
+    then
+        System.out.println( "gfs" );
 end

@@ -1,5 +1,6 @@
 package com.gl.rools;
 
+import org.drools.core.base.RuleNameEndsWithAgendaFilter;
 import org.kie.api.KieServices;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
@@ -18,7 +19,8 @@ public class DroolsService {
         message.setMessage("Good Bye");
         message.setStatus(Message.GOODBYE);
         kSession.insert(message);//插入
-        kSession.fireAllRules();//执行规则
+        //kSession.fireAllRules();//执行规则
+        kSession.fireAllRules(new RuleNameEndsWithAgendaFilter("gaolloag"));
         kSession.dispose();
         return message.getMessage();
     }
