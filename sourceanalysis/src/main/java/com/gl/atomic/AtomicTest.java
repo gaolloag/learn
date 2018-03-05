@@ -1,12 +1,24 @@
 package com.gl.atomic;
 
+import java.lang.ref.ReferenceQueue;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class AtomicTest {
 
-    public static void main(String[] args) {
+    static AtomicInteger ai = new AtomicInteger(1);
 
-        AtomicInteger ai = new AtomicInteger(1);
-        ai.get();
+    public static void main(String[] args) {
+        ReferenceQueue m;
+
+        System.out.println(ai.getAndIncrement());
+
+        System.out.println(ai.get());
+
+        System.out.println(ai.getAndIncrement());
+
+        System.out.println(ai.get());
+
     }
+
+
 }
