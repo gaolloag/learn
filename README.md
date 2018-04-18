@@ -11,6 +11,7 @@
 ├── /sourceanalysis/            # 源码分析，实验
 │ ├── /com.gl/   
 │ │ ├── genericity              # 泛型
+│ │ └── designmodel             # 设计模式               
 │ │ └──                
 │ ├── //                 
 
