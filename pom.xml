@@ -19,6 +19,7 @@
         <module>restful</module>
         <module>localdrools</module>
         <module>sourceanalysis</module>
+        <module>testng</module>
     </modules>
 
     <properties>
